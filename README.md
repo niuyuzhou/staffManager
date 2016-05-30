@@ -40,6 +40,8 @@ staffManager has the following modules:
 ```javascript
 mvn package
 mvn install
+```
+```javascript
 [INFO] staffmanager ...................................... SUCCESS [  0.218 s]
 [INFO] model ............................................. SUCCESS [  5.016 s]
 [INFO] rest .............................................. SUCCESS [  0.109 s]
