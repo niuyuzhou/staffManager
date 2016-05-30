@@ -82,6 +82,7 @@ curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: a8e98c5a-4483-45bf-9
 ###Create a new department
 ```javascript
 curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "Postman-Token: ed5b3db5-24aa-30bb-a70a-9512d411c222" -d '{"dept":{"deptName":"IT"},"emps":[{"empId":2,"empName":"John","salary":6000.0}]}' "http://localhost:8080/dept"
+```
 
 following is in progress
 * **delete**
