@@ -30,19 +30,29 @@ You need include the WPSerive.
 ```javascript
 mvn package
 mvn install
+```
 
 ### Run the relevent modules
 ```javascript
 cd [rest|security|oauth2]
 mvn spring-boot:run
+```
 
 ## rest
 ###Get All departments
 ```javascript
 curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: f7944f38-4358-d880-a22b-e1185f05403e" "http://localhost:8080/dept"
+```
 
+```javascript
 [{"dept":{"deptId":1,"deptName":"HR"},"emps":[{"empId":1,"empName":"Tom","salary":5000.0}]},{"dept":{"deptId":2,"deptName":"IT"},"emps":[{"empId":2,"empName":"John","salary":6000.0}]},{"dept":{"deptId":3,"deptName":"Marketing"},"emps":[]},{"dept":{"deptId":4,"deptName":"IT"},"emps":[]},{"dept":{"deptId":5,"deptName":"IT"},"emps":[]}]
-
-
+```
+###Get one department by Id
+```javascript
+curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: a8e98c5a-4483-45bf-9b0d-604b6dd1bb8b" "http://localhost:8080/dept/1"
+```
+```javascript
+{"dept":{"deptId":1,"deptName":"HR"},"emps":[{"empId":1,"empName":"Tom","salary":5000.0}]}
+```
 
 
