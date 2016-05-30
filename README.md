@@ -12,7 +12,7 @@ This is a example integrating the above technologies. It is under active develop
 [oauth2](#oauth2) &bull;
 
 ## Purpose
-This example is designed to make it easy for beginner to learn the relevent knowledge about [Maven](http://maven.apache.org/download.cgi), [Spring boot](https://projects.spring.io/spring-boot/), [Spring REST API](https://spring.io/understanding/REST), [Spring JPA](https://projects.spring.io/spring-data-jpa/), and [Spring OAuth2](https://spring.io/understanding/oauth)
+This example is designed to make it easy for beginner to learn the relevent knowledge about [Maven](http://maven.apache.org/download.cgi), [Spring boot](https://projects.spring.io/spring-boot/), [Spring REST API](https://spring.io/understanding/REST), [Spring JPA](https://projects.spring.io/spring-data-jpa/), [One-to-Many](https://en.wikibooks.org/wiki/Java_Persistence/OneToMany), and [Spring OAuth2](https://spring.io/understanding/oauth)
 ## What you'll need
 * JDK 1.8 or later
 * Maven 3.0+
