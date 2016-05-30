@@ -40,6 +40,7 @@ mvn spring-boot:run
 ## rest
 * You need to ensure that you've installed the module of model before you compile and run rest because rest depends on model.
 * It provides REST endpoints including create, find one, find All and update.
+
 ###Get All departments
 ```javascript
 curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: f7944f38-4358-d880-a22b-e1185f05403e" "http://localhost:8080/dept"
