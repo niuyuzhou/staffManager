@@ -26,7 +26,6 @@ staffManager has the following modules:
 ## Run example
 
 ### Installation
-You need include the WPSerive.
 ```javascript
 mvn package
 mvn install
@@ -39,6 +38,8 @@ mvn spring-boot:run
 ```
 
 ## rest
+* You need to ensure that you've installed the module of model before you compile and run rest because rest depends on model.
+* It provides REST endpoints including create, find one, find All and update.
 ###Get All departments
 ```javascript
 curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: f7944f38-4358-d880-a22b-e1185f05403e" "http://localhost:8080/dept"
@@ -54,5 +55,7 @@ curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: a8e98c5a-4483-45bf-9
 ```javascript
 {"dept":{"deptId":1,"deptName":"HR"},"emps":[{"empId":1,"empName":"Tom","salary":5000.0}]}
 ```
-
-
+###Create a new department
+```javascript
+curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "Postman-Token: ed5b3db5-24aa-30bb-a70a-9512d411c222" -d '{"dept":{"deptName":"IT"},"emps":[{"empId":2,"empName":"John","salary":6000.0}]}' "http://localhost:8080/dept"
+```
