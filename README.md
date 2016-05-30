@@ -1,4 +1,4 @@
-Spring Boot + REST API + Security + OAuth2 + JPA + Hibernate
+Spring Boot + REST API + Security + OAuth2 + JPA
 ==========================================
 This is a example integrating the above technologies. It is under active development, and more features are in progress.
 
@@ -10,8 +10,7 @@ This is a example integrating the above technologies. It is under active develop
 [rest](#rest) &bull;
 
 ## Purpose
-This example is designed to make it easy for beginner to learn the relevent knowledge about [Maven](http://maven.apache.org/download.cgi), [Spring boot](https://projects.spring.io/spring-boot/), [Spring REST API](https://spring.io/understanding/REST), [Spring JPA](https://projects.spring.io/spring-data-jpa/), [Spring OAuth2](https://spring.io/understanding/oauth) and [Spring Hibernate](http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html).  
-
+This example is designed to make it easy for beginner to learn the relevent knowledge about [Maven](http://maven.apache.org/download.cgi), [Spring boot](https://projects.spring.io/spring-boot/), [Spring REST API](https://spring.io/understanding/REST), [Spring JPA](https://projects.spring.io/spring-data-jpa/), and [Spring OAuth2](https://spring.io/understanding/oauth)
 ## What you'll need
 * JDK 1.8 or later
 * Maven 3.0+
@@ -26,20 +25,24 @@ staffManager has the following modules:
 
 ## Run example
 
-## Installation
+### Installation
 You need include the WPSerive.
-```mvn package
-```mvn install
+```javascript
+mvn package
+mvn install
 
-## Run the relevent modules
-```cd [rest|security|oauth2]
-```mvn spring-boot:run
+### Run the relevent modules
+```javascript
+cd [rest|security|oauth2]
+mvn spring-boot:run
 
 ## rest
+###Get All departments
+```javascript
+curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: f7944f38-4358-d880-a22b-e1185f05403e" "http://localhost:8080/dept"
 
-following is in progress
-* **pages**
-* **types**
-* **media**
+[{"dept":{"deptId":1,"deptName":"HR"},"emps":[{"empId":1,"empName":"Tom","salary":5000.0}]},{"dept":{"deptId":2,"deptName":"IT"},"emps":[{"empId":2,"empName":"John","salary":6000.0}]},{"dept":{"deptId":3,"deptName":"Marketing"},"emps":[]},{"dept":{"deptId":4,"deptName":"IT"},"emps":[]},{"dept":{"deptId":5,"deptName":"IT"},"emps":[]}]
+
+
 
 
