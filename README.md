@@ -1,4 +1,4 @@
-Spring Boot + REST API + Security + OAuth2 + JPA
+Spring Boot + REST API + Security + OAuth2 + JPA (demo)
 ==========================================
 This is a example integrating the above technologies. It is under active development, and more features are in progress.
 
