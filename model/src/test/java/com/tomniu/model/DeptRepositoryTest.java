@@ -34,6 +34,7 @@ public class DeptRepositoryTest {
 		}
 		assertEquals(0, total);
 		System.out.println("total: " + total);
+		System.out.println("deptRepo: " + deptRepo);
 	}
 	
 	@Test
