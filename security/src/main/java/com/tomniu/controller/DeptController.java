@@ -30,6 +30,7 @@ public class DeptController {
 	//-------------------Retrieve All Departments------------------------------
 	@RequestMapping(value="/dept", method = RequestMethod.GET)
     public ResponseEntity<List<DeptJson>> listAllDepts() {
+        System.out.println("Hello");
 		Iterable<Department> depts = deptRepo.findAll();
 		List<DeptJson> deptJsons = new ArrayList<DeptJson>();
         if(depts==null){
