@@ -33,6 +33,7 @@ public class DeptRepositoryTest {
 			total++;
 		}
 		assertEquals(0, total);
+		System.out.println("total: " + total);
 	}
 	
 	@Test
