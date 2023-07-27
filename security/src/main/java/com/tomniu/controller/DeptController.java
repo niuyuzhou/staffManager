@@ -50,6 +50,7 @@ public class DeptController {
     	Department dept = deptRepo.findOne(id);   	
         if (dept == null) {
             System.out.println("dept with id " + id + " not found");
+            System.out.println("ETR-200");
             return new ResponseEntity<DeptJson>(HttpStatus.NOT_FOUND);
         } else {
 	        System.out.println(dept.getDeptName());
